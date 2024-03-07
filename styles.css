@@ -60,19 +60,6 @@ html, body{
     flex-direction: column;
     border-radius: 20px;
     padding: 5px 5px ;
-    /* display: inline-grid; */
-    /* grid-template-columns: 285px;
-    grid-template-rows: 180px 200px 250px;
-    grid-template-areas: 
-    "hd"
-    "hd"
-    "hd"
-    "mid"
-    "mid"
-    "bottom"
-    "bottom"
-    "bottom"
-    ; */
     width: 300px; 
     gap: 5px;
 }
@@ -115,7 +102,9 @@ html, body{
     width: 100%;
     border-radius: 10px;
     height: 40%;
-    background-color: blueviolet;
+    background-image: url(Assets/img6.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #midleft{
@@ -123,17 +112,40 @@ html, body{
     width: 100%;
     height: 10%;
     border-radius: 10px;
-    background-color: brown;
+    background-color: rgb(175, 217, 240);
     /* margin-left: 10px; */
     /* margin-right: 10px; */
 }
-
 #bottomleft{
-    /* grid-area: bottom; */
+    display: flex;
     width: 100%;
     height: 50%;
     border-radius: 10px;
-    background-color: burlywood;
+    background-color:  rgb(175, 217, 240);
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavb{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#leftbottomtext{
+    padding-top: 20px;
+    /* padding-left: 25px; */
+    font-size: large;
 }
 
 #topright{
@@ -144,12 +156,15 @@ html, body{
 }
 
 #bottomright{
-    grid-area: dh;
-    display: flex;
-    justify-content:left;
-    align-items: center;  
-    color: antiquewhite;
+    grid-area: dh;  
     background-color: #161515;
+}
+
+#textbottomright{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: small;
+    color: antiquewhite;
 }
 
 #rightrighttop{
@@ -163,9 +178,29 @@ html, body{
 
 #rightrightmid{
     grid-area: side2;
-    background-image: url(Assets/img\ 4.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(233, 197, 154);
+}
+
+#rnavm{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+    text-align:start;
+}
+
+#rightmidtext{
+    font-size: small;
+}
+
+#rightmidtext p{
+    opacity: .8;
+    font-size: 12px;
+    line-height: 20px;
+}
+#rightmidtext h2{
+    opacity: .8;
+    line-height: 20px;
 }
 
 #rightrightbottom{
